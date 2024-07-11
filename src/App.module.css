@@ -16,7 +16,7 @@
         padding-bottom: 1rem;
 
         ul {
-            grid-template-columns: auto 1fr auto;
+            grid-template-columns: auto 1fr 1fr;
             padding: 1rem;
 
             li {
@@ -33,6 +33,14 @@
 
             li {
                 text-align: center;
+
+                h3 {
+                    border-right: 1px dashed white;
+                    border-bottom: 3px solid white;
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
 
                 p {
                     border-bottom: 1px solid white;
@@ -97,11 +105,13 @@ p {
 
 form {
     input {
+        font-size: 1rem;
         margin: 0.5rem;
         box-sizing: border-box;
         border: 0 solid transparent;
         border-radius: 0.25rem;
         padding: 0.5rem;
+        height: fit-content;
 
         &:focus {
             outline: none;

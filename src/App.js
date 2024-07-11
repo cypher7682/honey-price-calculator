@@ -2,7 +2,7 @@ import './App.module.css';
 import classes from './App.module.css';
 import {useEffect, useRef, useState} from "react";
 import PricePer from "./Components/PricePer";
-
+import comb from './Srv/Honeycomb_texture.svg'
 function App() {
 
     const [formValues, setFormValues] = useState({
@@ -28,9 +28,7 @@ function App() {
 
     return (
         <div className={classes.App}>
-            <div className={classes.Backdrop}>
-                {/*style={{backgroundImage: `url(${comb})`}}*/}
-                <h1>Honey Calculator</h1>
+            <div className={classes.Backdrop}><h1>Honey Calculator</h1>
                 <div className={classes.Inputs}>
                     <form>
                         <ul>
@@ -41,7 +39,7 @@ function App() {
                             <li>
                                 <p>x</p><input id={"multiplier"} value={formValues.multiplier}
                                                onChange={handleFormUpdate}/>
-                                <label>comb honey multiplier</label>
+                                <label>cut-comb multiplier</label>
                             </li>
                         </ul>
                     </form>
