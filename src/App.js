@@ -45,7 +45,6 @@ function App() {
                     </form>
                 </div>
                 <div className={classes.Price}>
-                    {/*<h2>Price</h2>*/}
                     <ul>
                         <li>
                             <h3>Weight</h3>
